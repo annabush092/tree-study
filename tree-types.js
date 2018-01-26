@@ -99,3 +99,39 @@ const myMinHeap = {
     }
   }
 }
+
+// a non-binary tree in which each node is a character, and each path down the tree provides a different word.
+// ends of words are indicated with a null node.
+// aka a prefix tree.
+const myTrie = {
+  parent:
+    value: 'a',
+    children: [
+      null,
+      {'n'}
+    ]
+  }
+}
+
+const myTrie = [
+  'a',
+  [
+    null, // 'a'
+    ['n', [
+      null, // 'an'
+      ['d', [
+        null // 'and'
+      ]]
+    ]],
+    ['p', [
+      ['p', [
+        null, // 'app'
+        ['l', [
+          'e', [
+            null // 'apple'
+          ]
+        ]]
+      ]]
+    ]]
+  ]
+]

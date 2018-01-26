@@ -1,3 +1,4 @@
+//defined originally in tree-types.js
 const myBinaryTree = {
   parent: {
     left: {
@@ -34,6 +35,7 @@ const myBinaryTree = {
 //If not, this just means visiting nodes in order from the left child, the node itself, and then the right child.
 function inOrderTraversal(node) {
   if(node !== null) {
+    //recursive call to get down through the tree on both left and right sides.
     inOrderTraversal(node['left'])
     console.log(node['value'])
     inOrderTraversal(node['right'])

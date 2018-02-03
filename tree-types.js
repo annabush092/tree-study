@@ -104,34 +104,23 @@ const myMinHeap = {
 // ends of words are indicated with a null node.
 // aka a prefix tree.
 const myTrie = {
-  parent:
-    value: 'a',
-    children: [
-      null,
-      {'n'}
-    ]
+  a: {
+    end: null, // 'a'
+    n: {
+      end: null, // 'an'
+      d: {
+        end: null // 'and'
+      }
+    },
+    p: {
+      p: {
+        end: null, // 'app'
+        l: {
+          e: {
+            end: null // 'apple'
+          }
+        }
+      }
+    }
   }
 }
-
-const myTrie = [
-  'a',
-  [
-    null, // 'a'
-    ['n', [
-      null, // 'an'
-      ['d', [
-        null // 'and'
-      ]]
-    ]],
-    ['p', [
-      ['p', [
-        null, // 'app'
-        ['l', [
-          'e', [
-            null // 'apple'
-          ]
-        ]]
-      ]]
-    ]]
-  ]
-]
